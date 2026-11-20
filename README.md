@@ -45,6 +45,8 @@ The [AI App Starter](./starters/nextjs-supabase-vercel/) turns your AI coding ag
 
 The starter contains no code: it's stage-by-stage instructions, permission rules, and the test and CI requirements the agent follows. The agent writes the app, its tests and its checks.
 
+**See it finished:** [Splitmate](./examples/splitmate/), an expense splitter built with the starter end to end — its product documents, decisions, working app and 83 tests are all in that folder.
+
 **1.** Open your agent in a new, empty folder.
 
 | You use | How |
