@@ -1,0 +1,44 @@
+{
+  "name": "splitmate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Split shared costs and see who owes whom.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node scripts/check-env.mjs && next dev",
+    "build": "node scripts/check-env.mjs && next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/check-env.mjs && vitest run",
+    "test:watch": "vitest",
+    "verify": "npm run lint && npm run typecheck && npm run test && npm run build",
+    "db:reset": "node scripts/check-env.mjs && node scripts/reset-db.mjs",
+    "db:seed": "node scripts/check-env.mjs && node scripts/seed-demo.mjs",
+    "smoke": "node scripts/check-env.mjs && node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "4.3.3",
+    "@testing-library/jest-dom": "^8.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.13",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.3.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "jsdom": "^31.0.1",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5",
+    "vitest": "^5.1.1"
+  }
+}
